@@ -5,12 +5,12 @@ const auth = (req, res, next) => {
         const token = req.session.user;
         const verified = jwt.verify(token, process.env.JWT_SECRET)
         if (!verified) {
-            res.redirect('/login')
+           return res.redirect('/login')
         } else {
             req.id = verified.userID;
         }
     } else {
-        res.redirect('/login')
+        return res.redirect('/login')
     }
     next();
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <%- include("components/nav.ejs")%>
+    <header id="header">
+        <div class="bannerImage">
+          <div>
+            <h1>Pakistan best news place</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+          </div>  
+        </div>
+    </header>
+    <div class="msg">
+      <div class="container">
+      <% if(locals.message.success) { %>
+      <div class="alert-success"><%= message.success %></div>
+      <% } %>
+     </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <% if(posts.length > 0 ) { %>
+        <% } else { %>
+        <p>no post in the database</p>
+        <% } %>    
+      </div>
+    </div>
+</body>
+</html>

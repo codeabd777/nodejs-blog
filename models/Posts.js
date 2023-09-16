@@ -13,10 +13,7 @@ const PostSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    image: {
-        type: String,
-        required: true
-    }
+    
 }, { timestamps: true })
 
 const Posts = mongoose.model("post", PostSchema)

@@ -182,12 +182,18 @@ label {
     display:flex;
     justify-content: center;
     margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
 }
 .postFormContainer form{
     width:450px;
     background: var(--whitecolor);
     padding: 25px;
 
+}
+
+.errorhelper{
+    width: 450px!important;
 }
 #imageLabel {
     display: none;
@@ -202,4 +208,41 @@ label {
     outline:none;
     overflow: hidden;
     color: var(--green1);
+}
+
+#header {
+    width: 100%;
+    padding: 0 104px;
+    height: 350px;
+    margin-top: 20px;
+}
+.bannerImage {
+    width: 100%;
+    background: url("../img/ab.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 350px;
+    display: flex;
+    background-color: rgba(0,0,0,.7);
+    background-blend-mode: overlay;
+    color: var(--whitecolor);
+    align-items: center;
+    justify-content: center;
+    
+}
+.bannerImage div h1{
+    width: 500px;
+}
+.bannerImage div {
+    width: 500px;
+}
+.bannerImage div p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.msg{
+    margin: 15px 0;
+}
+.container {
+    padding: 0 104px;
 }
